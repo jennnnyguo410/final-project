@@ -1,0 +1,81 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: white;
+    font-size: 20px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #2f90b9;
+    font-style: normal;
+}
+
+.wrapper {
+    width: 40%;
+    height: 100%;
+    margin: 5%;
+    margin-top: 10%;
+}
+
+.down {
+    float: left;
+    text-align: center;
+    width: 50%;
+
+}
+
+
+nav {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    line-height: 40px;
+    text-align: center;
+}
+
+.card {
+    cursor: pointer;
+    width: 33px;
+    height: 47px;
+}
+
+.front,
+.back {
+
+    height: auto;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+}
+
+.front {
+    transform: perspective(6000px) rotateY(0deg);
+}
+
+.back {
+    color: #20894d;
+    transform: perspective(6000px) rotateY(180deg);
+}
+
+.card:hover>.front {
+    transform: perspective(6000px) rotateY(-180deg);
+}
+
+.card:hover>.back {
+    transform: perspective(6000px) rotateY(0deg);
+}
+
+a {
+    color: #2f90b9;
+}
+
+a:hover {
+    color: #20894d;
+}
