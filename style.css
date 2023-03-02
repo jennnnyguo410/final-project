@@ -16,8 +16,9 @@ body {
     font-style: normal;
 }
 
+
 .wrapper {
-    width: 40%;
+    width: 50%;
     height: 100%;
     margin: 5%;
     margin-top: 10%;
@@ -27,7 +28,6 @@ body {
     float: left;
     text-align: center;
     width: 50%;
-
 }
 
 
@@ -39,15 +39,67 @@ nav {
     text-align: center;
 }
 
+/* TIMELINE */
+.date {
+    width: 300px;
+    position: absolute;
+    top: 30%;
+    right: 5%;
+}
+
+.line {
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    background-color: #2f90b9;
+    top: 0;
+    right: 50%;
+    margin-left: -50%;
+}
+
+
+
+dl {
+    width: 100px;
+    text-align: left;
+    padding-right: 100px;
+    padding: 10px 0;
+    overflow: scroll;
+}
+
+dl dt {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+dl dd {
+    font-size: 25px;
+    color: #20894d;
+}
+
+dl.right {
+    text-align: right;
+    padding-left: 200px;
+    padding-right: 0;
+}
+
+dd.d2 {
+    font-size: 15px;
+    color: #2f90b9;
+}
+
+/* END OF TIMELINE */
+
+
 .card {
     cursor: pointer;
-    width: 33px;
-    height: 47px;
+    width: 100%;
+    height: 147px;
 }
 
 .front,
 .back {
-
     height: auto;
     overflow: hidden;
     backface-visibility: hidden;
@@ -56,10 +108,18 @@ nav {
 }
 
 .front {
+    width: 15%;
     transform: perspective(6000px) rotateY(0deg);
+
+}
+
+.front img {
+    width: 100%;
 }
 
 .back {
+    padding-top: 50%;
+    text-align: center;
     color: #20894d;
     transform: perspective(6000px) rotateY(180deg);
 }
