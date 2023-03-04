@@ -16,6 +16,13 @@ body {
     font-style: normal;
 }
 
+nav {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    line-height: 40px;
+    text-align: center;
+}
 
 .wrapper {
     width: 50%;
@@ -28,15 +35,6 @@ body {
     float: left;
     text-align: center;
     width: 50%;
-}
-
-
-nav {
-    position: absolute;
-    right: 5%;
-    top: 5%;
-    line-height: 40px;
-    text-align: center;
 }
 
 /* TIMELINE */
@@ -56,8 +54,6 @@ nav {
     right: 50%;
     margin-left: -50%;
 }
-
-
 
 dl {
     width: 100px;
@@ -91,7 +87,7 @@ dd.d2 {
 
 /* END OF TIMELINE */
 
-
+/* PROJECT CARD */
 .card {
     cursor: pointer;
     width: 100%;
@@ -139,3 +135,5 @@ a {
 a:hover {
     color: #20894d;
 }
+
+/* END OF PROJECT CARD */
