@@ -114,7 +114,7 @@ dd.d2 {
 }
 
 .back {
-    padding-top: 50%;
+    padding-top: 5%;
     text-align: center;
     color: #20894d;
     transform: perspective(6000px) rotateY(180deg);
